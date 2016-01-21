@@ -1,0 +1,16 @@
+*~
+*.swp
+*.swo
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+*.beam
+*.bak
+ebin
+.rebar
+TAGS
+erl_crash.dump
