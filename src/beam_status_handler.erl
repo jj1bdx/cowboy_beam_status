@@ -81,8 +81,8 @@ handle(Req, State=#state{}) ->
             {<<"cache-control">>, <<"private, max-age=0, no-cache">>}
         ],
         [static1(),
-         io_lib:format("<p>You are from IP ~s Port ~.10B</p>",
-                     [string:to_lower(inet:ntoa(Addr)), Port]),
+         f("<p>You are from IP ~s Port ~.10B</p>",
+           [string:to_lower(inet:ntoa(Addr)), Port]),
          static2(),
          pinfo_table(),
          static3()
